@@ -1,0 +1,4 @@
+opencv-python
+nes-py
+gym_super_mario_bros
+https://github.com/CherryPieSexy/imitation_learning
