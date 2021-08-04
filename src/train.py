@@ -38,7 +38,7 @@ train_args = {
 }
 training_args = {'n_epoch': 10, 'n_steps_per_epoch': 250, 'rollout_len': rollout_len}
 
-run_test_process = True
+run_test_process = False
 render_test_env = True
 test_process_act_deterministic = False
 
@@ -76,12 +76,12 @@ def parse_args():
 
 def main():
     args = parse_args()
-    log_dir = f'logs/mario/world-{args.world}-level-{args.level}_tune_1/'
+    log_dir = f'logs/mario/world-{args.world}-level-{args.level}/'
     create_log_dir(log_dir, __file__)
     device = torch.device(args.device)
 
     ppo_args.update({'entropy': args.entropy, 'learning_rate': args.learning_rate})
-    training_args.update({'log_dir': log_dir})
+    train_args.update({'log_dir': log_dir})
 
     parallel.run(
         log_dir, partial(make_env, world=args.world, level=args.level),
