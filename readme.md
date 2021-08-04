@@ -2,9 +2,8 @@
 
 # Introduction
 
-I took the environment, idea and inspiration from [this repo](https://github.com/uvipen/Super-mario-bros-PPO-pytorch).
-
-Using [my code for training PPO](https://github.com/CherryPieSexy/imitation_learning) I was able to solve 27/32 levels.
+Using [my code for training PPO](https://github.com/CherryPieSexy/imitation_learning)
+I was able to solve 27/32 levels in retro Mario env.
 I believe 4 out of 5 these levels are still possible to solve, just need to train or tune longer.
 
 Unsolved levels:
@@ -64,7 +63,11 @@ For testing the checkpoint, place it in [checkpoints](checkpoints) folder and ru
 python src/test.py -w {world} -l {level} -r
 ```
 
-### Further plans
+## Acknowledgement
+
+I took the environment, idea and inspiration from [this repo](https://github.com/uvipen/Super-mario-bros-PPO-pytorch).
+
+## Further plans
 It is interesting to re-produce results of the ICM paper
 [site](https://pathak22.github.io/noreward-rl/), [paper 2](https://arxiv.org/abs/1808.04355)
 where an RL agent learns how to explore the environment without reward and solves 11 levels.
