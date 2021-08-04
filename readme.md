@@ -42,7 +42,7 @@ Unsolved levels:
     <img src="gifs/world_7_level_3.gif" width="200">
     <img src="gifs/world_7_level_4.gif" width="200"><br/>
     <img src="gifs/world_8_level_2.gif" width="200">
-    <img src="gifs/world_8_level_3.gif" width="200">
+    <img src="gifs/world_8_level_3.gif" width="200"><br/>
     <i>Sample results</i>
 </p>
 
