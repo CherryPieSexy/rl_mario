@@ -10,9 +10,7 @@ Unsolved levels:
  - 4-4 - a labyrinth, for some reason environment restrictions are not good enough to prevent agent from running into loops.
  - 5-3 and 6-3 - difficult platforming.
  - 8-1 - long level, there are 2 hard segments near the end of the level agent struggle to solve.
- - 8-4 - very hard labyrinth.   
-
-(TODO): cut success from 7-2
+ - 8-4 - very hard labyrinth.
 
 <p align="left">
     <img src="gifs/world_1_level_1.gif" width="200">
@@ -48,6 +46,10 @@ Unsolved levels:
 ## Instructions
 
 It is possible to train a new model and watch how it plays the game with this code.
+To run this code call following command first:
+```
+bash setup.sh
+```
 
 ### Training
 The most important training parameters are learning rate and entropy. They are both accessible via args.

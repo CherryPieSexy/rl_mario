@@ -12,8 +12,8 @@ from cherry_rl.algorithms.optimizers.rl.ppo import PPO
 
 import cherry_rl.algorithms.parallel as parallel
 
-from src.encoder import Encoder
-from src.environment import make_mario_env
+from encoder import Encoder
+from environment import make_mario_env
 
 recurrent = False
 

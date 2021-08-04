@@ -3,7 +3,8 @@ import argparse
 import torch
 
 from cherry_rl.test import play_n_episodes
-from src.train import make_mario_env, make_ac_model
+
+from train import make_mario_env, make_ac_model
 
 
 def parse_args():
